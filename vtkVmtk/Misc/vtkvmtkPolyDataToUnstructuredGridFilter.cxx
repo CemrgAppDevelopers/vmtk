@@ -30,6 +30,7 @@ Version:   $Revision: 1.3 $
 #include "vtkInformation.h"
 #include "vtkInformationVector.h"
 #include "vtkObjectFactory.h"
+#include "vtkVersion.h"
 
 
 vtkStandardNewMacro(vtkvmtkPolyDataToUnstructuredGridFilter);

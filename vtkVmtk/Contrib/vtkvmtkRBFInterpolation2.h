@@ -33,6 +33,7 @@ Version:   $Revision: 1.3 $
 #include "vtkPolyData.h"
 #include "vtkDoubleArray.h"
 #include "vtkvmtkWin32Header.h"
+#include "vtkVersion.h"
 
 class VTK_VMTK_CONTRIB_EXPORT vtkvmtkRBFInterpolation2 : public vtkImplicitFunction
 {

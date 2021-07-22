@@ -29,6 +29,7 @@ Version:   $Revision: 1.4 $
 #include "vtkInformation.h"
 #include "vtkInformationVector.h"
 #include "vtkvmtkConstants.h"
+#include "vtkVersion.h"
 
 
 vtkStandardNewMacro(vtkvmtkSteepestDescentShooter);

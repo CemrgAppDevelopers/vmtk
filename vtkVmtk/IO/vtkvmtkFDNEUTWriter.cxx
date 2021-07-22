@@ -24,6 +24,7 @@ Version:   $Revision: 1.6 $
 #include "vtkCellType.h"
 #include "vtkObjectFactory.h"
 #include "vtkvmtkConstants.h"
+#include "vtkVersion.h"
 
 
 vtkStandardNewMacro(vtkvmtkFDNEUTWriter);

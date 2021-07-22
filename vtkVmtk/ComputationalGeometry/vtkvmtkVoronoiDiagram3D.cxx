@@ -30,6 +30,7 @@ Version:   $Revision: 1.5 $
 #include "vtkInformation.h"
 #include "vtkInformationVector.h"
 #include "vtkvmtkConstants.h"
+#include "vtkVersion.h"
 
 
 vtkStandardNewMacro(vtkvmtkVoronoiDiagram3D);

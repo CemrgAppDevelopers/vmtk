@@ -32,6 +32,7 @@ Version:   $Revision: 1.5 $
 #include "vtkInformation.h"
 #include "vtkInformationVector.h"
 #include "vtkObjectFactory.h"
+#include "vtkVersion.h"
 
 
 vtkStandardNewMacro(vtkvmtkNonManifoldFastMarching);

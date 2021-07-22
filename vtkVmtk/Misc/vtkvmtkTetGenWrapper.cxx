@@ -32,6 +32,7 @@ Version:   $Revision: 1.8 $
 #include "vtkInformationVector.h"
 #include "vtkObjectFactory.h"
 #include "tetgen.h"
+#include "vtkVersion.h"
 
 
 vtkStandardNewMacro(vtkvmtkTetGenWrapper);
