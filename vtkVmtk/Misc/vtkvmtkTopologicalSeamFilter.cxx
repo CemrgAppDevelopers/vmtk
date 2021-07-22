@@ -169,8 +169,7 @@ int vtkvmtkTopologicalSeamFilter::RequestData(vtkInformation *vtkNotUsed(request
   std::queue<vtkIdType> leftQueue;
   std::queue<vtkIdType> rightQueue;
 
-  vtkIdType *cells;
-  unsigned short ncells;
+  vtkIdType *cells, ncells;
 
   while (!seamQueue.empty())
   {

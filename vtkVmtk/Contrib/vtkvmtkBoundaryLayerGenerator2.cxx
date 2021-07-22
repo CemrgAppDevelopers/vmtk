@@ -162,8 +162,12 @@ int vtkvmtkBoundaryLayerGenerator2::RequestData(
     outputPoints->SetPoint(i,point);
     }
 
-  vtkIdType npts, *pts;
-  vtkIdType *surfacePts;
+  vtkIdType npts, *surfacePts;
+#if VTK_MAJOR_VERSION >= 9 || (VTK_MAJOR_VERSION >= 8 && VTK_MINOR_VERSION >= 90)
+  const vtkIdType *pts;
+#else
+  vtkIdType *pts;
+#endif
 
   if (this->IncludeSurfaceCells || this->IncludeOriginalSurfaceCells)
     {
@@ -272,7 +276,11 @@ int vtkvmtkBoundaryLayerGenerator2::RequestData(
       vtkDataArray *openProfilesScalars = openProfilesExtractor->GetOutput()->GetPointData()->GetScalars();
       
       vtkIdType npts = 0;
-      vtkIdType *pts = NULL;
+#if VTK_MAJOR_VERSION >= 9 || (VTK_MAJOR_VERSION >= 8 && VTK_MINOR_VERSION >= 90)
+      const vtkIdType *pts;
+#else
+      vtkIdType *pts;
+#endif
       int profileId;
       for (profileId=0, openProfiles->InitTraversal(); openProfiles->GetNextCell(npts,pts); profileId++)
         {
@@ -305,7 +313,11 @@ int vtkvmtkBoundaryLayerGenerator2::RequestData(
    
     vtkIdType prismNPts, *prismPts;
     vtkIdType nTetraPts = 0;
+#if VTK_MAJOR_VERSION >= 9 || (VTK_MAJOR_VERSION >= 8 && VTK_MINOR_VERSION >= 90)
+    const vtkIdType *tetraPts = NULL;
+#else
     vtkIdType *tetraPts = NULL;
+#endif
     
     for (i=0; i<numberOfInputCells; i++)
       {

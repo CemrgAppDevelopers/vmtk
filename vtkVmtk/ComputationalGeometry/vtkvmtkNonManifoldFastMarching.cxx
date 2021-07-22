@@ -113,7 +113,7 @@ void vtkvmtkNonManifoldFastMarching::InitPropagation(vtkPolyData* input)
 #else
   vtkIdType *pts;
 #endif
-  unsigned short ncells;
+  vtkIdType ncells;
   vtkIdType intersectedEdge[2];
   vtkDataArray* initializationArray, *costFunctionArray, *intersectedEdgesArray;
   vtkIdList* neighborCells;
@@ -266,7 +266,7 @@ void vtkvmtkNonManifoldFastMarching::GetNeighbors(vtkPolyData* input, vtkIdType 
 #else
   vtkIdType *pts;
 #endif
-  unsigned short ncells;
+  vtkIdType ncells;
 
   input->GetPointCells(pointId,ncells,cells);
   for (i=0; i<ncells; i++)
