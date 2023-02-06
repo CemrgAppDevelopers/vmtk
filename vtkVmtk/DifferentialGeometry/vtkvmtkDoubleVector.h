@@ -30,6 +30,8 @@
 //#include "vtkvmtkDifferentialGeometryWin32Header.h"
 #include "vtkvmtkWin32Header.h"
 
+#include <math.h>
+
 #define VTK_VMTK_L2_NORM 0
 #define VTK_VMTK_LINF_NORM 1
 

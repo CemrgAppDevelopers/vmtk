@@ -26,6 +26,8 @@ Version:   $Revision: 1.4 $
 #ifndef __vtkvmtkLevelSetSigmoidFilter_h
 #define __vtkvmtkLevelSetSigmoidFilter_h
 
+#include <math.h>
+
 #include "vtkSimpleImageToImageFilter.h"
 #include "vtkImageData.h"
 #include "vtkvmtkWin32Header.h"

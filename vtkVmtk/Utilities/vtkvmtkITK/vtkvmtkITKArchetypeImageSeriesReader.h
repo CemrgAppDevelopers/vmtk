@@ -30,6 +30,7 @@ class vtkMatrix4x4;
 #include <algorithm>
 #include <string>
 #include <vector>
+#include <math.h>
 
 /// \brief Read a series of files that have a common naming convention.
 ///

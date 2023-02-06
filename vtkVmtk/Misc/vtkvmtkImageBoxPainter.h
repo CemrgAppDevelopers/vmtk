@@ -25,6 +25,8 @@
 #ifndef __vtkvmtkImageBoxPainter_h
 #define __vtkvmtkImageBoxPainter_h
 
+#include <math.h>
+
 #include "vtkSimpleImageToImageFilter.h"
 #include "vtkvmtkWin32Header.h"
 

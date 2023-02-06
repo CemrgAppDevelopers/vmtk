@@ -65,7 +65,7 @@ class VTK_VMTK_IO_EXPORT vtkvmtkFDNEUTReader : public vtkUnstructuredGridReader
   vtkvmtkFDNEUTReader();
   ~vtkvmtkFDNEUTReader();
 
-  virtual int RequestData(vtkInformation *, vtkInformationVector **, vtkInformationVector *) override;
+  virtual int RequestData(vtkInformation *, vtkInformationVector **, vtkInformationVector *) ;
 
   static void OneToZeroOffset(int npts, int* pts)
   { for (int i=0; i<npts; i++) --pts[i]; }

@@ -47,7 +47,7 @@ protected:
   vtkvmtkXdaReader();
   ~vtkvmtkXdaReader();
 
-  virtual int RequestData(vtkInformation *, vtkInformationVector **, vtkInformationVector *) override;
+  virtual int RequestData(vtkInformation *, vtkInformationVector **, vtkInformationVector *);
 
   static void GetLibmeshConnectivity(int cellType, vtkIdList* libmeshConnectivity);
 

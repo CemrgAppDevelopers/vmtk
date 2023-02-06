@@ -30,6 +30,8 @@
 //#include "vtkvmtkDifferentialGeometryWin32Header.h"
 #include "vtkvmtkWin32Header.h"
 
+#include <math.h>
+
 class VTK_VMTK_DIFFERENTIAL_GEOMETRY_EXPORT vtkvmtkStencil : public vtkvmtkNeighborhood 
 {
 public:
